@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #197C5B;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: #252, 158, 79;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+}
+button{
+    background: #6D696A;
+    color: white;
+    border: none;
+    font-size: 28px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all 2s ease-in;
+}
+button:hover{
+    border: 1px solid white;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 50px);
+}
+.equal{
+    border: 2px solid #FC9E4F;
+}
+.equal:hover{
+    transform: translate(1.1);
+}
+#result{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 45px;
+    color: #FC9E4F;
+    margin-bottom: 35px;
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+#del{
+    width: 110px;
+}
+.b{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-orientation: none;
+    margin: 30px 0;
+    border: 2px solid red;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.b::before{
+    background: orange;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.btn{
+    width: 300px;
+    margin-left: 20px;
+    color: white;
+}
+.btn:hover{
+    color: red;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 0%;
+    background: orange;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn::before{
+    height: 180%;
+}
+.btn:hover::before{
+    height: 0%;
+}
+
+
+
+.btn1::before{
+    width: 0%;
+    height: 100%;
+}
+.btn1:hover::before{
+    width: 100%;
+}
